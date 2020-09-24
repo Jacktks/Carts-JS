@@ -1,0 +1,75 @@
+.popup {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 999;
+    &__form {
+        position: relative;
+        margin-bottom: 15px;
+        input {
+            height: 45px;
+            padding: 0 58px 0 15px;
+        }
+        button {
+            top: 1px;
+            right: 1px;
+            padding: 13px 14px;
+            position: absolute;
+        }
+    }
+    &__background {
+        width: 100%;
+        max-width: 800px;
+        position: absolute;
+        
+        padding: 30px 35px;
+        @include flex;
+        top: 3%;
+        left: 50%;
+
+        background-color: #f1eeeb;
+        transform: translateX(-50%);
+        @include res("md") {
+            max-width: 90%;
+        }
+        @include res("sm") {
+            display: unset;
+            justify-content: unset;
+        }
+        @include res("xs") {
+            padding: 30px 15px;
+        }
+    }
+    &__img {
+        @include res("sm") {
+          text-align: center;
+        }
+    }
+    &__content {
+        &--title {
+            font-size: 23px;
+            font-weight: 700;
+            line-height: 2;
+            margin-bottom: 15px;
+            color: $cl_m;
+            text-transform: uppercase;
+        }
+        p {
+          margin-bottom: 15px;
+        }
+    }
+    &__close {
+        top: 10px;
+        right: 10px;
+        position: absolute;
+        cursor: pointer;
+        i {
+            color: $cl_m;
+            font-size: 20px;
+        }
+    }
+}

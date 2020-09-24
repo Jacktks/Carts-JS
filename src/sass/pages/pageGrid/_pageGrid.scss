@@ -1,0 +1,22 @@
+.shop__background {
+    background-color: #fbf9f9;
+}
+.shop-grid {
+    padding-bottom: 150px;
+    &__banner {
+        margin-bottom: 2rem;
+        img {
+            width: 100%;
+        }
+    }
+    &__columns {
+        padding-bottom: 80px;
+        @include d-grid(1fr 1fr 1fr);
+        @include res("md"){
+            @include d-grid(1fr 1fr);
+        }
+        @include res("xs") {
+            @include d-grid(1fr);
+        }
+    }
+}

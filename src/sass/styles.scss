@@ -1,0 +1,63 @@
+
+
+// Import base styles
+@import "./base/variables";
+@import "./base/mixins";
+@import "./base/global";
+
+// Import components styles
+@import "./components/components";
+@import "./components/slider";
+@import "./components/product-grid";
+@import "./components/title";
+@import "./components/product-new";
+@import "./components/sidebar";
+@import "./components/breadcrumb";
+@import "./components/pagination";
+@import "./components/catalog";
+@import "./components/button";
+@import "./components/related";
+@import "./components/quantity";
+@import "./components/tab";
+@import "./components/category";
+@import "./components/form";
+@import "./components/checkbox";
+
+// Import layouts styles
+@import "./layouts/header";
+@import "./layouts/footer";
+@import "./layouts/topbar";
+@import "./layouts/navbar";
+@import "./layouts/banner";
+// Import pages styles
+@import "./pages/index";
+
+//PageHome
+@import "./pages/pageHome/feature";
+@import "./pages/pageHome/sale";
+@import "./pages/pageHome/blog";
+
+//PageGrid
+@import "./pages/pageGrid/pageGrid";
+//PageList
+@import "./pages/pageList/pageList";
+//PageDetails
+@import "./pages/pageDetails/pageDetails";
+//PageCart
+@import "./pages/PageCart/pageCart";
+//PageBlog
+@import "./pages/pageBlog/pageBlog";
+//PageBlog
+@import "./pages/pageBlogDetails/blog-details";
+//PageRegister
+@import "./pages/pageRegister/register";
+//PageRegister
+@import "./pages/pageLogin/pageLogin.scss";
+//PageContact
+@import "./pages/pageContact/contact";
+//PageContact
+@import "./pages/pagePopup/popup";
+//PageInfo-Customer
+@import "./pages/pageinfo-customer/info-customer";
+//PagePay-ment
+@import "./pages/pagePayment/payment";

@@ -1,0 +1,36 @@
+.blog {
+    margin-bottom: 45px;
+    &__title {
+        margin-bottom: 8px;
+        font-size: 18px;
+        color: #636363;
+        a {
+            line-height: 1.5;
+        }
+    }
+    &__post {
+        display: flex;
+        margin-bottom: 20px;
+        li {
+            margin-right: 15px;
+            span {
+                margin-right: 6px;
+                i {
+                    color: $cl_m;
+                }
+            }
+            a {
+                font-size: 12px;
+            }
+        }
+    }
+    &__img {
+        margin-bottom: 30px;
+        img {
+            height: 450px;
+            @include res("xs") {
+                height: 250px;
+            }
+        }
+    }
+}

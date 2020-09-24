@@ -1,0 +1,30 @@
+.shop-cart
+    .container
+        .cart__progress-bar
+            .wrapper
+                .cart__progress-bar__container
+                    .cart__progress-bar__item
+                        p STEP 1: GIỎ HÀNG
+        form.cart__form(action='#')
+            table.cart__table
+                tbody.cart__columns
+                    tr
+                        +cart-columns('img', 'hình ảnh')
+                        +cart-columns('name', 'tên sản phẩm')
+                        +cart-columns('price', 'đơn giá')
+                        +cart-columns('quatity', 'số lượng')
+                        +cart-columns('total', 'thành tiền')
+                        +cart-columns('remove', 'xóa')
+                tbody.cart__product
+            .cart__btn
+                a(href="pageproduct.html") 
+                    span.btn__common tiếp tục mua
+                button.btn__delete.btn__common#deleteAll xóa tất cả
+        form.cart__pay(action='#')  
+            table.table-pay
+                //- +table-pay('','tổng tiền (chưa thuế)','270.000 đ')
+                //- +table-pay('','thuế (vat 10%)','27.000 đ')
+                //- +table-pay('cart__pay--background','Tổng phải thanh toán','297.000 đ')
+            .cart__btn2.btn__checkout
+                a(href="info-customer.html") 
+                    span.btn__common Thanh toán

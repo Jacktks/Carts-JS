@@ -1,0 +1,42 @@
+.title {
+    &__section {
+        margin-bottom: 2rem;
+    }
+    &__green{
+        position: relative;
+        padding-bottom: 1rem;
+
+        font-size: 16.24px;
+        font-weight: 700;
+        
+        color: $cl_m;
+        border-bottom: 1px solid #e1e1e1;
+       
+        &:after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            max-width: 135px;
+            height: 3px;
+            left: 0;
+            bottom: -2px;
+
+            background-color: $cl_m;
+            
+        }
+    }
+    &__head {
+        font-size: 18px;
+        font-weight: 700;
+        color: $cl_m;
+        margin-bottom: 50px;
+        text-transform: uppercase;
+    }
+    &__small {
+        font-size: 18px;
+        text-transform: uppercase;
+        font-weight: 700;
+        color: #363533;
+        margin-bottom: 30px;
+    }
+}

@@ -1,0 +1,72 @@
+.topbar{
+    @include res("sm") {
+        display: none;   
+    }
+    background-color: #202020;
+    &__inner{
+        @include flex;
+        @include res("sm") {
+            display: unset;
+        }
+    }
+    &__left{
+        @include flex;
+        &--opentime{
+            margin-right: 40px;
+            span {
+                color: #898989;
+                font-family: 'Arial';
+            }
+            .time{
+                margin-left: 5px;
+                margin-right: 15px;
+            }
+        }
+        &--social{
+            border-left: 1px solid #2b2b2b;
+            a {
+                font-size: 11px;
+                width: 32px;
+                height: 30px;
+                display: inline-block;
+
+                line-height: 30px;
+                text-align: center;
+
+                color: #898989;
+                border-right: 1px solid #2b2b2b;
+                &:hover {
+                    color: $cl_m;
+                }
+            }
+            
+        }
+    }
+    &__right {
+        display: flex;
+        &--signin{
+            i {
+                padding: 8px 10px;
+                border-left: 1px solid #2b2b2b;
+                &:last-child {
+                    padding: 8px 0 !important;
+                    border: none;
+                }
+            }
+        }
+        
+        a {
+            font-size: 12px;
+            color: #898989;
+            font-family: $font_s;
+            font-weight: 400;
+            padding: 8px 10px;
+            &:last-child {
+                border-right: 1px solid #2b2b2b;
+            }
+            &:hover {
+                color: $cl_m;
+            }
+        }
+    }
+}

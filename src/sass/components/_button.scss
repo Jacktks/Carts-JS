@@ -1,0 +1,35 @@
+.btn {
+    &__common {
+        display: inline-block;
+        font-size: 13px;
+        padding: 14px 36px 13px 36px;
+
+        color: #fff;
+        line-height: normal;
+        text-transform: uppercase;
+
+        border-radius: 36px;
+        background-color: $cl_m;
+        border: 1px solid $cl_m;
+        &:hover {
+            background-color: $cl_white;
+            color: $cl_m;
+        }
+    }
+    &__search,
+    &__favourite {
+        width: 44px;
+        height: 44px;
+        line-height: 44px;
+        text-align: center;
+        display: inline-block;
+
+        background-color: $cl_white;
+        border-radius: 50px;
+        border: 1px solid #ebebeb;
+        &:hover {
+            background-color: $cl_m;
+            color: $cl_white;
+        }
+    }
+}

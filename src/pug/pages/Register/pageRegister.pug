@@ -1,0 +1,28 @@
+.register
+    .container
+        form.register__form(action='#')
+            .register__top
+                h2.title__head Thông tin cá nhân
+                .register__columns
+                    .register__left 
+                        +register('Họ và tên')
+                        +register('Địa chỉ email')
+                    .register__right
+                        +register('Số ĐT')
+                        +register('Website của bạn')
+                .checkbox
+                    input#cbx.checkbox__inp(type='checkbox')
+                    label.checkbox__custom(for='cbx')
+                        span.checkbox__custom--tick
+                        span.checkbox__custom--text Đăng ký nhận thông tin qua email
+            .register__bottom
+                h2.title__head Thông tin tài khoản
+                .register__columns
+                    .register__left 
+                        +register('Mật khẩu')
+                    .register__right
+                        +register('Nhập lại mật khẩu')
+            .register__btn
+                button.btn__common quay lại
+                button.btn__common đăng kí
+    

@@ -1,0 +1,58 @@
+//-Footer
+footer.footer
+    .widget__first
+        .container
+            .widget__first--wrap
+                .widget__intro
+                    p Kênh thông tin từ chúng tôi:
+                    .widget__intro--social
+                        a(href='#')
+                            i.fab.fa-facebook-f
+                        a(href='#')
+                            i.fab.fa-twitter
+                        a(href='#')
+                            i.fab.fa-instagram
+                        a(href='#')
+                            i.fab.fa-vimeo
+                .widget__intro
+                    .widget__intro--email đăng ký nhận email từ chúng tôi
+                .widget__search
+                    form(action='#' method='post' class='widget__search--subcribe')
+                        input(type='text' name='email')
+                        button(class='btn-subcribe' name='subcribe')
+                            i.fa.fa-paper-plane
+    .widget__second
+        .container
+            .widget__detail--flex
+                .widget__detail.left
+                    .widget__detail--logo
+                        a(href="index.html" title="Logo")
+                            img(src="../../../assets/images/logo/01.png")
+                    p.widget__detail--des Green shop được thành lập từ 8/2010 được sự tin tưởng của khách hàng trong suốt thời gian hoạt động đến nay cửa hàng ngày một phát triển 
+                    ul.widget__detail--contact
+                        .icon__footer--mobile
+                            a(href='#')
+                                i.fas.fa-mobile
+                            p Điện thoại : (84-4) 66.558.868
+                        .icon__footer--email
+                            a(href='#')
+                                i.fas.fa-envelope
+                            p Email: info@dkt.com.vn
+                .widget__detail.right
+                    .widget__detail--wrap
+                        +widget__list('Thông tin khách hàng',['Tài khoản của tôi','Sản phẩm yêu thích','Lịch sử mua hàng','Chính sách đổi trả','Góp ý ,khiếu nại'])
+                        +widget__list('Hỗ trợ dịch vụ',['Hệ thống cửa hàng','Hướng dẫn mua hàng','Hướng dẫn thanh toán','Tích điểm đổi quà','Câu hỏi thường gặp'])
+                        +widget__list('Chính sách ưu đãi',['Chính sách giao hàng','Chính sách đổi trả sản phẩm','Chính sách bảo hành ','Giới thiệu sản phẩm mới','Chính sách trả góp'])
+                        +widget__list('Tin tức',['Tin mới','Khuyến mại','Tuyển dụng','Download','Tags'])
+    .widget__third
+        .container
+            .widget__third--flex
+                .widget__menu
+                    each link in ['Sitemap','Danh mục sản phẩm ','Hợp tác','Thông tin liên hệ','Câu hỏi thường gặp']
+                        +widget__menu(link)
+                .widget__payment
+                    img(src="../../../assets/images/footer/01.png")
+    .bottom
+        .container
+            p Thiết kế bởi Bizweb &copy;
+

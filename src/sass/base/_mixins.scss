@@ -1,0 +1,58 @@
+//Flex-item
+@mixin flex($justify: space-between, $wrap: nowrap, $align: center) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-wrap: $wrap;
+}
+//Grid
+@mixin d-grid($col) {
+    display: grid;
+    grid-template-columns: $col;
+    grid-gap: 30px;
+}
+
+//Responsive
+$bps: ("xl": 1440px,"lg": 1200px,"lgs": 1199px,"md": 991px,"sm": 767px,"xs": 575px,"mbl": 480px,"mbs": 425px);
+@mixin res($bp,$m:max) {
+    @if map-has-key($bps, $bp) {
+        @media (#{$m}-width: map-get($bps, $bp)) {
+            @content;
+        }
+    }
+    @else {
+      @warn "There no `#{$bp}`"
+            + "Available breakpoints are: #{map-keys($bps)}.";
+    }
+}
+//Animation
+.trans {
+    $webs: -moz-, -ms-, -o-, -webkit-, space;
+    @each $web in $webs {
+        @if $web == space {
+            transition: all 0.5s ease-in-out;
+        }
+        @else{
+            #{$web}transition: all 0.5s ease-in-out;
+        }
+      
+    }
+}
+//Box-shadow
+@mixin b_shadow {
+    $webs: -moz-, -webkit-, space;
+    @each $web in $webs {
+        @if $web == space {
+            box-shadow: 0 5px 30px 0 rgba(0, 0, 0, 0.1);
+        }
+        @else {
+            #{$web}box-shadow: 0 5px 30px 0 rgba(0, 0, 0, 0.1);
+        }
+    }
+}
+
+@mixin  font-a($cl, $s, $fw:700) {
+    color: $cl;
+    font-size: $s;
+    font-weight: $fw;
+}

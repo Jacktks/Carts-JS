@@ -1,0 +1,56 @@
+extends ../layouts/default-layout.pug
+block title
+    +title('Green Shop | Grid Page')
+block content
+    .shop__background
+        +breadcrumb('Danh sách sản phẩm')
+        .shop-grid
+            .container
+                .has-sidebar__flex
+                    .has-sidebar__sidebar
+                        .category__sidebar
+                            .title__section
+                                h2.title__green Danh mục sản phẩm
+                            ul.category__product
+                                each link in ['Cây chậu treo ( 10 )','Cây có hoa ( 5 )','Cây dây leo','Cây để bàn','Cây may mắn','Cây trang trí','Cây nội thất']
+                                    +category-product(link)
+                        .category__sidebar
+                            .title__section
+                                h2.title__green Tìm theo giá
+                            ul.category__product
+                                each link in ['200.000 Đ - 400.000 Đ','400.000 Đ - 600.000 Đ','600.000 Đ - 800.000 Đ','800.000 Đ - 1.000.000 Đ','1.000.000 Đ - 2.000.000 Đ']
+                                    +category-product(link)
+                        .category__sidebar
+                            .title__section
+                                h2.title__green Tìm theo màu
+                            .category__color
+                            each val in [{green:"Xanh cây"},{red:"Đỏ cam"},{purple:"Tím"},{blue:"Xanh trời"},{yellow:"Vàng"},{pink:"Hồng"}]
+                                +category-color(Object.keys(val)[0],val[Object.keys(val)[0]])
+                    .has-sidebar__content 
+                        .shop-grid__banner
+                            img(src='../../../assets/images/page-title/01.jpg' alt='images')
+                        .catalog__top
+                            .catalog__view-mode
+                                a(href="#" class="catalog__view-mode--grid active")
+                                    i.fa.fa-th
+                                a(href="#" class="catalog__view-mode--list")
+                                    i.fa.fa-th-list
+                            .catalog__right
+                                .catalog__filter
+                                    label Sắp xếp theo
+                                    .catalog__option
+                                        select.catalog__option--orderby(name='orderby')
+                                            each option in ['Sản phẩm 1','Sản phẩm 2','Sản phẩm 3','Sản phẩm 4','Tên sản phẩm']
+                                                +catalog-orderby(option)
+                                .catalog__filter
+                                    label Show
+                                    .catalog__option
+                                        select.catalog__option--orderby(name='orderby')
+                                            each option in ['2','5','10','12','15']
+                                                +catalog-orderby(option)
+                        block shop-product
+                            include ../partials/product-grid.pug
+                        .pagination
+                            ul
+                                each link in ['Trang trước','1','2','3','4','Trang sau']
+                                    +pagination(link)

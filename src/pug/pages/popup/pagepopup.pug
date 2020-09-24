@@ -1,0 +1,18 @@
+.popup
+    .popup__background
+        .popup__img
+            img(src="../../../../assets/images/popup/01.png" alt='images')
+        .popup__content
+            h3.popup__content--title Đăng ký email ngay hôm ngay
+            form(action='#' method='post' class='popup__form')
+                input(placeholder='Nhập email của bạn vào đây' type='text' )
+                button
+                    i.fa.fa-paper-plane
+            p Đăng ký email ngay hôm nay để nhận các thông tin về sự kiện và các trương chình giảm giá từ chúng tôi
+            .checkbox
+                input#cbx.checkbox__inp(type='checkbox')
+                label.checkbox__custom(for='cbx')
+                    span.checkbox__custom--tick
+                    span.checkbox__custom--text Không hiển thị lại thông báo này nữa 
+        .popup__close
+            i.fa.fa-times

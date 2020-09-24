@@ -1,0 +1,92 @@
+p {
+    margin: 15px 0;
+}
+.comment {
+    &__list {
+        li:first-child {
+            .comment-box__content, .comment-box__reply {
+                padding-bottom: 30px;
+                border-bottom: 1px solid #e1e1e1;
+            }
+        }
+        li:last-child {
+            .comment-box {
+                padding: 30px 0;
+                border-bottom: 1px solid #e1e1e1;
+                border-top: 1px solid #e1e1e1;
+            }
+        }
+        &--reply {
+            padding-left: 80px;
+        }
+    }
+}
+.comment-box {
+    margin-bottom: 40px;
+    display: flex;
+    &__avatar {
+        padding-right: 30px;
+    }
+    &__content {
+        
+        &--name {
+            font-size: 14px;
+            color: #363636;
+            margin-bottom: -5px;
+        }
+        &--time {
+            .time {
+                font-size: 12px;
+                font-style: italic;
+            }
+        }
+    }
+    &__reply {
+        a {
+            font-size: 14px;
+            white-space: nowrap;
+            font-style: italic;
+            border-bottom: 2px solid #e1e1e1;
+        }
+    }
+}
+.w-comment {
+    &__top {
+        display: flex;
+        margin-bottom: 30px;
+        @include res("md") {
+            display: unset;
+            margin-bottom: 10px;
+        }
+        &--input {
+            flex-grow: 1;
+            input {
+                font-size: 14px;
+            }
+            &:not(:last-child) {
+                margin-right: 30px;
+                @include res("md") {
+                    margin-right: unset;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+    &__bottom {
+        margin-bottom: 30px;
+        @include res("md") {
+            margin-top: 10px;
+        }
+        textarea {
+            font-size: 12px;
+            height: 146px;
+        }
+    }
+    &__btn {
+        text-align: right;
+        button {
+            padding: 14px 70px;
+        }
+    }
+    
+}

@@ -1,0 +1,42 @@
+.contact{
+    &__map {
+        margin-bottom: 50px;
+    }
+    &__form {
+        margin-bottom: 80px;
+    }
+    &__columns {
+        @include d-grid(1fr 1fr);
+        @include res("md") {
+            @include d-grid(1fr);
+        }
+    }
+    &__right {
+        img {
+            margin-top: 40px;
+            @include res("md") {
+                margin-top: unset;
+            }
+        }
+        span {
+            display: block;
+            margin-top: 20px;
+            font-size: 12px;
+        }
+    }
+    &__icon {
+        margin-top: 20px;
+        &--mobile, &--email {
+            display: flex;
+            a {
+                margin-right: 15px;
+                i {
+                    display: grid;
+                    height: 45px;
+                    align-items: center;
+                }
+            }
+           
+        }
+    }
+}

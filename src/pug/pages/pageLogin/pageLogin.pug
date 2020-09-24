@@ -1,0 +1,22 @@
+.register
+    .container
+        form.register__form(action="#")
+            .register__top
+                .register__columns 
+                    .register__left
+                        h2.title__head Thông tin cá nhân
+                        +register('Email của bạn')
+                        +register('Mật khẩu')
+                    .register__right
+                        h2.title__head Bạn chưa có tài khoản ?
+                        span Đăng ký tài khoản ngay để có thể mua hàng nhanh chóng và dễ dàng hơn!. Ngoài ra còn có rất nhiều chính sách và ưu đãi cho thành viên citybike
+                        button.btn__common Đăng ký
+                .checkbox
+                    input#cbx.checkbox__inp(type="checkbox")
+                    label.checkbox__custom(for="cbx")
+                        span.checkbox__custom--tick
+                        span.checkbox__custom--text Ghi nhớ tài khoản
+                    a Bạn quên mật khẩu ?
+                button.btn__common Đăng nhập
+
+                        

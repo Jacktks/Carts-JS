@@ -1,0 +1,28 @@
+.contact
+    .contact__map
+        iframe(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3833.7154990273198!2d108.21780861433675!3d16.08024664341496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3142183b8dc2697d%3A0xc105565d68b6ad90!2zMTYgTMO9IFRoxrDhu51uZyBLaeG7h3QsIFRo4bqhY2ggVGhhbmcsIEjhuqNpIENow6J1LCDEkMOgIE7hurVuZyA1NTAwMDAsIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1595215530889!5m2!1svi!2s' width='100%' height='488' frameborder='0' style='border:0;' allowfullscreen='' aria-hidden='false' tabindex='0')
+    .container
+        form.contact__form(action="#")
+            .contact__columns
+                .contact__left
+                    h2.title__head Thông tin liên hệ
+                    +register('Họ và tên')
+                    +register('Địa chỉ email')
+                    +register('Số ĐT')
+                    fieldset.form__group
+                        label Bình luận
+                            span.required *
+                        textarea(type='text')
+                .contact__right
+                    a(href="index.html" title="Logo")
+                        img(src="../../../../assets/images/logo/01.png", alt="image")
+                    span DKT được thành lập với niềm đam mê và khát vọng trong lĩnh vực thương mại điện tử. Chúng tôi đã và đang khẳng định được vị trí hàng đầu bằng những sản phẩm.
+                    ul.contact__icon
+                        li.contact__icon--mobile
+                            a(href='#')
+                                i.fas.fa-mobile
+                            p Điện thoại: (84-4) 66.558.868
+                        li.contact__icon--email
+                            a(href='#')
+                                i.fas.fa-envelope
+                            p Email: info@dkt.com.vn

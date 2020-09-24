@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>Green Shop | Page Register</title>
+    <!-- Styles-->
+    <link href="./assets/css/styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  </head>
+  <body>
+    <div class="topbar">
+      <div class="container">
+        <div class="topbar__inner">
+          <div class="topbar__left">
+            <div class="topbar__left--opentime"><i class="fas fa-clock"></i><span class="time">Open time: 8:00 - 18:00</span><span class="date">Monday - Sun</span></div>
+            <div class="topbar__left--social"><a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i class="fab fa-twitter"></i></a><a href="#"><i class="fab fa-instagram"></i></a><a href="#"><i class="fab fa-vimeo"></i></a></div>
+          </div>
+          <div class="topbar__right">
+            <div class="topbar__right--signin"><i class="fas fa-user"><a class="icons-login" href="#">Đăng nhập</a></i><i class="fas fa-user-plus"><a class="icons-register" href="#">Đăng kí</a></i></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <header class="header">
+      <div class="container">
+        <div class="header__grid">
+          <div class="header__logo"><a href="../../../index.html" title="Logo"><img src="../../../assets/images/logo/01.png" alt="Logo"></a></div>
+          <div class="header__content">
+            <div class="header__search">
+              <form action="#" method="post"><i class="fas fa-phone-square"></i><span class="header__search--hotline">Hỗ trợ: (04) 6674 2332 - (04) 3786 8904</span>
+                <div class="header__search--input">
+                  <input placeholder="Tìm kiếm..." type="search">
+                  <button class="btn-search" type="submit"><i class="fa fa-search"></i></button>
+                </div>
+              </form>
+            </div>
+            <div class="header__cart"><a href="pagecart.html"><i class="fa fa-shopping-basket"></i></a><span class="header__cart--amount">0</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="header__img"><img src="../../../assets/images/header/02.png"></div>
+    </header>
+    <div class="menubar">
+      <div class="container">
+        <div class="menu__flex">
+          <div class="menu__inner">
+            <div class="menu__mobile"><a href="#"><i class="fas fa-bars"></i></a></div>
+            <nav class="menu__nav">
+              <ul class="menu">
+                    <li class="menu__list"><a class="active menu__list--link" href="#">Trang chủ</a></li>
+                    <li class="menu__list"><a class="menu__list--link" href="#">Giới thiệu</a></li>
+                    <li class="menu__list"><a class="menu__list--link" href="#">Sản phẩm<i class="fa fa-caret-down"></i></a>
+                      <ul class="menu__sub">
+                        <li class="menu__sub--list"><a class="menu__sub--link" href="#">Sản phẩm 1</a></li>
+                        <li class="menu__sub--list"><a class="menu__sub--link" href="#">Sản phẩm 2</a></li>
+                      </ul>
+                    </li>
+                    <li class="menu__list"><a class="menu__list--link" href="#">Sản phẩm mới<i class="fa fa-caret-down"></i></a>
+                      <ul class="menu__sub">
+                        <li class="menu__sub--list"><a class="menu__sub--link" href="#">Sản phẩm mới 1</a></li>
+                        <li class="menu__sub--list"><a class="menu__sub--link" href="#">Sản phẩm mới 2</a></li>
+                      </ul>
+                    </li>
+                    <li class="menu__list"><a class="menu__list--link" href="#">Tin tức</a></li>
+                    <li class="menu__list"><a class="menu__list--link" href="#">Liên hệ</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="mobile__header">
+            <div class="mobile__search"><a href="#"><i class="fas fa-search"></i></a>
+              <div class="mobile__search__form">
+                <form action="#" method="post">
+                  <input type="text" placeholder="Gõ tìm kiếm...">
+                  <button class="mobile__search__form--btn" type="search"><i class="fas fa-search"></i></button>
+                </form>
+              </div>
+            </div>
+            <div class="mobile__cart"><a href="#"><i class="fas fa-shopping-basket"></i></a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+        <div class="breadcrumb">
+          <div class="container">
+            <ul class="breadcrumb__inner">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="#">Đăng ký</a></li>
+            </ul>
+          </div>
+        </div>
+    <div class="register">
+      <div class="container">
+        <form class="register__form" action="#">
+          <div class="register__top">
+            <h2 class="title__head">Thông tin cá nhân</h2>
+            <div class="register__columns">
+              <div class="register__left"> 
+                    <fieldset class="form__group">
+                      <label>Họ và tên<span class="required">*</span></label>
+                      <input type="text">
+                    </fieldset>
+                    <fieldset class="form__group">
+                      <label>Địa chỉ email<span class="required">*</span></label>
+                      <input type="text">
+                    </fieldset>
+              </div>
+              <div class="register__right">
+                    <fieldset class="form__group">
+                      <label>Số ĐT<span class="required">*</span></label>
+                      <input type="text">
+                    </fieldset>
+                    <fieldset class="form__group">
+                      <label>Website của bạn<span class="required">*</span></label>
+                      <input type="text">
+                    </fieldset>
+              </div>
+            </div>
+            <div class="checkbox">
+              <input class="checkbox__inp" id="cbx" type="checkbox">
+              <label class="checkbox__custom" for="cbx"><span class="checkbox__custom--tick"></span><span class="checkbox__custom--text">Đăng ký nhận thông tin qua email</span></label>
+            </div>
+          </div>
+          <div class="register__bottom">
+            <h2 class="title__head">Thông tin tài khoản</h2>
+            <div class="register__columns">
+              <div class="register__left"> 
+                    <fieldset class="form__group">
+                      <label>Mật khẩu<span class="required">*</span></label>
+                      <input type="text">
+                    </fieldset>
+              </div>
+              <div class="register__right">
+                    <fieldset class="form__group">
+                      <label>Nhập lại mật khẩu<span class="required">*</span></label>
+                      <input type="text">
+                    </fieldset>
+              </div>
+            </div>
+          </div>
+          <div class="register__btn">
+            <button class="btn__common">quay lại</button>
+            <button class="btn__common">đăng kí</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="widget__first">
+        <div class="container">
+          <div class="widget__first--wrap">
+            <div class="widget__intro">
+              <p>Kênh thông tin từ chúng tôi:</p>
+              <div class="widget__intro--social"><a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i class="fab fa-twitter"></i></a><a href="#"><i class="fab fa-instagram"></i></a><a href="#"><i class="fab fa-vimeo"></i></a></div>
+            </div>
+            <div class="widget__intro">
+              <div class="widget__intro--email">đăng ký nhận email từ chúng tôi</div>
+            </div>
+            <div class="widget__search">
+              <form class="widget__search--subcribe" action="#" method="post">
+                <input type="text" name="email">
+                <button class="btn-subcribe" name="subcribe"><i class="fa fa-paper-plane"></i></button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="widget__second">
+        <div class="container">
+          <div class="widget__detail--flex">
+            <div class="widget__detail left">
+              <div class="widget__detail--logo"><a href="index.html" title="Logo"><img src="../../../assets/images/logo/01.png"></a></div>
+              <p class="widget__detail--des">Green shop được thành lập từ 8/2010 được sự tin tưởng của khách hàng trong suốt thời gian hoạt động đến nay cửa hàng ngày một phát triển </p>
+              <ul class="widget__detail--contact">
+                <div class="icon__footer--mobile"><a href="#"><i class="fas fa-mobile"></i></a>
+                  <p>Điện thoại : (84-4) 66.558.868</p>
+                </div>
+                <div class="icon__footer--email"><a href="#"><i class="fas fa-envelope"></i></a>
+                  <p>Email: info@dkt.com.vn</p>
+                </div>
+              </ul>
+            </div>
+            <div class="widget__detail right">
+              <div class="widget__detail--wrap">
+                    <div class="widget__col">
+                      <h3 class="widget__title">Thông tin khách hàng</h3>
+                      <ul class="widget__list">
+                            <li class="widget__list--link"><i class="fas fa-chevron-right"></i><a href="#">Tài khoản của tôi</a></li>
+                            <li class="widget__list--link"><i class="fas fa-chevron-right"></i><a href="#">Sản phẩm yêu thích</a></li>
+                            <li class="widget__list--link"><i class="fas fa-chevron-right"></i><a href="#">Lịch sử mua hàng</a></li>
+                            <li class="widget__list--link"><i class="fas fa-chevron-right"></i><a href="#">Chính sách đổi trả</a></li>
+                            <li class="widget__list--link"><i class="fas fa-chevron-right"></i><a href="#">Góp ý ,khiếu nại</a></li>
+                      </ul>
+                    </div>
+                    <div class="widget__col">
+                      <h3 class="widget__title">Hỗ trợ dịch vụ</h3>
+                      <ul class="widget__list">
+                            <li class="widget__list--link"><i class="fas fa-chevron-right"></i><a href="#">Hệ thống cửa hàng</a></li>
+                            <li class="widget__list--link"><i class="fas fa-chevron-right"></i><a href="#">Hướng dẫn mua hàng</a></li>
+                            <li class="widget__list--link"><i class="fas fa-chevron-right"></i><a href="#">Hướng dẫn thanh toán</a></li>
+                            <li class="widget__list--link"><i class="fas fa-chevron-right"></i><a href="#">Tích điểm đổi quà</a></li>
+                            <li class="widget__list--link"><i class="fas fa-chevron-right"></i><a href="#">Câu hỏi thường gặp</a></li>
+                      </ul>
+                    </div>
+                    <div class="widget__col">
+                      <h3 class="widget__title">Chính sách ưu đãi</h3>
+                      <ul class="widget__list">
+                            <li class="widget__list--link"><i class="fas fa-chevron-right"></i><a href="#">Chính sách giao hàng</a></li>
+                            <li class="widget__list--link"><i class="fas fa-chevron-right"></i><a href="#">Chính sách đổi trả sản phẩm</a></li>
+                            <li class="widget__list--link"><i class="fas fa-chevron-right"></i><a href="#">Chính sách bảo hành </a></li>
+                            <li class="widget__list--link"><i class="fas fa-chevron-right"></i><a href="#">Giới thiệu sản phẩm mới</a></li>
+                            <li class="widget__list--link"><i class="fas fa-chevron-right"></i><a href="#">Chính sách trả góp</a></li>
+                      </ul>
+                    </div>
+                    <div class="widget__col">
+                      <h3 class="widget__title">Tin tức</h3>
+                      <ul class="widget__list">
+                            <li class="widget__list--link"><i class="fas fa-chevron-right"></i><a href="#">Tin mới</a></li>
+                            <li class="widget__list--link"><i class="fas fa-chevron-right"></i><a href="#">Khuyến mại</a></li>
+                            <li class="widget__list--link"><i class="fas fa-chevron-right"></i><a href="#">Tuyển dụng</a></li>
+                            <li class="widget__list--link"><i class="fas fa-chevron-right"></i><a href="#">Download</a></li>
+                            <li class="widget__list--link"><i class="fas fa-chevron-right"></i><a href="#">Tags</a></li>
+                      </ul>
+                    </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="widget__third">
+        <div class="container">
+          <div class="widget__third--flex">
+            <div class="widget__menu"><a class="widget__menu--link" href="#">Sitemap</a><a class="widget__menu--link" href="#">Danh mục sản phẩm </a><a class="widget__menu--link" href="#">Hợp tác</a><a class="widget__menu--link" href="#">Thông tin liên hệ</a><a class="widget__menu--link" href="#">Câu hỏi thường gặp</a>
+            </div>
+            <div class="widget__payment"><img src="../../../assets/images/footer/01.png"></div>
+          </div>
+        </div>
+      </div>
+      <div class="bottom">
+        <div class="container">
+          <p>Thiết kế bởi Bizweb &copy;</p>
+        </div>
+      </div>
+    </footer>
+    <!-- Scripts-->
+  </body>
+</html>

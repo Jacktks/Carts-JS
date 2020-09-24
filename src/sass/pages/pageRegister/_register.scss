@@ -1,0 +1,29 @@
+.register {
+    padding-bottom: 80px;
+    &__top {
+        margin-bottom: 50px;
+    }
+    
+    &__columns {
+        @include d-grid(1fr 1fr);
+        @include res("md") {
+            @include d-grid(1fr);
+            grid-gap: 0;
+        }
+    }
+    &__btn {
+        button {
+            margin: 0 20px 20px 0;
+        }
+    }
+    &__right {
+        h2 {
+            margin-bottom: 20px !important;
+        }
+        button {
+            margin-top: 30px;
+            display: block;
+        }
+    }
+
+}

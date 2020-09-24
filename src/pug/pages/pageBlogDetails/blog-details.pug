@@ -1,0 +1,37 @@
+.blog.blog__single
+    +blog-content(
+        'Cách bố trí hoa chậu trước cửa ấn tượng ngay lần đầu tiên',
+        '06',
+        'Như thể hiện sự thân thiện cũng như sự hiếu khách của gia chủ, phần không gian trước cửa nhà luôn được đầu tư và trang trí khá bắt mắt. Cũng có thể nói đây là bộ mặt của ngôi nhà, là ấn tượng đầu tiên khzi một vị khách ghé chơi nhà bạn đấy. Hãy cùng Sài Gòn Hoa tham khảo một vài cách bố trí chậu cây hoa cảnh ngay trước cửa nhà sao cho ấn tượng nhất nhé!'
+    )
+    p 7 loại cây xanh để bàn đang được giới văn phòng ưa chuộng, Những mẫu cây để bàn đang được giới văn phòng ưa chuộng, cây cảnh văn phòng để bàn thông dụng, những cây cảnh được giới văn phòng ưa chuộng
+    p Cây bạch mã hoàng tử để bàn có chiều cao trung bình từ 20 – 40cm, dáng đẹp, lá cây màu xanh đậm với những đường vân vàng nhạt mọc đối xứng nhau trông rất sang trọng và lịch lãm.
+    p Loại cây này ưa bóng, chịu được nhiệt độ thấp lại có khả năng tạo ẩm và thanh lọc không khí nên rất thích hợp đặt trong văn phòng làm việc có máy lạnh.
+    p Cây bạch mã hoàng tử thường được chọn để đặt trên bàn làm việc của sếp, bàn nhỏ ở phòng tiếp khách hoặc bàn làm việc của các đấng mày râu.
+    p 2. Cây trầu bà đế vương
+    p Cây trầu bà đế vương tượng trưng cho quyền uy, phong thái dẫn đầu nên thích hợp để đặt trên bàn làm việc của người lãnh đạo, quản lý doanh nghiệp.
+    p Lá cây trầu bá đế vương khá to, dày, hơi bóng, đường gân rõ ràng, có hình dạng như hình trái tim, xòe rộng hướng lên trên trông rất bệ nghễ và cao sang.
+    p Tùy thuộc vào sở thích cá nhân và thiết kế chủ đạo của không gian phòng làm việc, bạn có thể chọn loại trầu bà đế vương xanh, trầu bá đế vương vàng hoặc trầu bà đế vương đỏ.
+    .blog__img
+        img(src='../../../../assets/images/blog/04.jpg' alt='images')
+    p Như thể hiện sự thân thiện cũng như sự hiếu khách của gia chủ, phần không gian trước cửa nhà luôn được đầu tư và trang trí khá bắt mắt. Cũng có thể nói đây là bộ mặt của ngôi nhà, là ấn tượng đầu tiên khzi một vị khách ghé chơi nhà bạn đấy. Hãy cùng Sài Gòn Hoa tham khảo một vài cách bố trí chậu cây hoa cảnh ngay trước cửa nhà sao cho ấn tượng nhất nhé!
+    p 7 loại cây xanh để bàn đang được giới văn phòng ưa chuộng, Những mẫu cây để bàn đang được giới văn phòng ưa chuộng, cây cảnh văn phòng để bàn thông dụng, những cây cảnh được giới văn phòng ưa chuộng
+.comments
+    h4.title__small bình luận (3)
+    ul.comment__list
+        li
+            +comment("07","Nguyễn Văn An","This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.","Thứ 7, 26/12/2015 12: 00 AM")
+        li.comment__list--reply
+            +comment("07","Nguyễn Văn An","This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.","Thứ 7, 26/12/2015 12: 00 AM")
+        li
+            +comment("07","Nguyễn Văn An","This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.","Thứ 7, 26/12/2015 12: 00 AM")
+.w-comment
+    h4.title__small viết bình luận:
+    form.w-comment__form(action='#')
+        .w-comment__top
+            each content in ['Họ và tên:', 'Email:', 'Phone:']
+                +form(content)
+        .w-comment__bottom
+            textarea(placeholder='Bình luận' type='text')
+        .w-comment__btn
+            button.btn__common gửi

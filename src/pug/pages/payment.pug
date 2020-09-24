@@ -1,0 +1,37 @@
+extends ../layouts/default-layout.pug
+block title
+    +title('Green Shop | Page Payment')
+block content
+    +breadcrumb('Thanh toán')
+    .payment
+        .container
+            .payment__progress-bar
+                .wrapper
+                    .payment__progress-bar__container
+                        .payment__progress-bar__item
+                            p STEP 3: HOÀN THÀNH THANH TOÁN
+            .register__top
+                .payment__info-customer
+                    h2.title__head Thông tin khách hàng
+                .payment__btn
+                    a(href="info-customer.html")
+                        button.btn__common Chỉnh sửa lại thông tin
+            .register__bottom
+                .payment__info-product
+                    h2.title__head Thông tin sản phẩm
+                    table.cart__table
+                        tbody.cart__columns
+                            tr
+                                +cart-columns('img', 'hình ảnh')
+                                +cart-columns('name', 'tên sản phẩm')
+                                +cart-columns('price', 'đơn giá')
+                                +cart-columns('quatity', 'số lượng')
+                                +cart-columns('total', 'thành tiền')
+                        tbody.payment__product
+            .cart__pay
+                table.table-payment
+                .cart__btn2
+                    button.btn__common.btn__checkoutalls Thanh toán
+block script
+    script(src="./assets/js/scripts.js")
+    script(src="./assets/js/payment.js")

@@ -1,0 +1,12 @@
+extends ../layouts/default-layout.pug
+block title
+  +title('Green Shop | Home Page')
+block content
+    include ../partials/slider.pug
+    include ./pageHome/feature.pug
+    include ./pageHome/pagesale.pug
+    include ../partials/banner.pug
+    include ./pageHome/product-new.pug
+    include ./pageHome/blog.pug
+block script
+  script(src="./assets/js/scripts.js")

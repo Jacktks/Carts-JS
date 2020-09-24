@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>Green Shop | Grid Page</title>
+    <!-- Styles-->
+    <link href="./assets/css/styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  </head>
+  <body>
+    <div class="topbar">
+      <div class="container">
+        <div class="topbar__inner">
+          <div class="topbar__left">
+            <div class="topbar__left--opentime"><i class="fas fa-clock"></i><span class="time">Open time: 8:00 - 18:00</span><span class="date">Monday - Sun</span></div>
+            <div class="topbar__left--social"><a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i class="fab fa-twitter"></i></a><a href="#"><i class="fab fa-instagram"></i></a><a href="#"><i class="fab fa-vimeo"></i></a></div>
+          </div>
+          <div class="topbar__right">
+            <div class="topbar__right--signin"><i class="fas fa-user"><a class="icons-login" href="#">Đăng nhập</a></i><i class="fas fa-user-plus"><a class="icons-register" href="#">Đăng kí</a></i></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <header class="header">
+      <div class="container">
+        <div class="header__grid">
+          <div class="header__logo"><a href="../../../index.html" title="Logo"><img src="../../../assets/images/logo/01.png" alt="Logo"></a></div>
+          <div class="header__content">
+            <div class="header__search">
+              <form action="#" method="post"><i class="fas fa-phone-square"></i><span class="header__search--hotline">Hỗ trợ: (04) 6674 2332 - (04) 3786 8904</span>
+                <div class="header__search--input">
+                  <input placeholder="Tìm kiếm..." type="search">
+                  <button class="btn-search" type="submit"><i class="fa fa-search"></i></button>
+                </div>
+              </form>
+            </div>
+            <div class="header__cart"><a href="pagecart.html"><i class="fa fa-shopping-basket"></i></a><span class="header__cart--amount">0</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="header__img"><img src="../../../assets/images/header/02.png"></div>
+    </header>
+    <div class="menubar">
+      <div class="container">
+        <div class="menu__flex">
+          <div class="menu__inner">
+            <div class="menu__mobile"><a href="#"><i class="fas fa-bars"></i></a></div>
+            <nav class="menu__nav">
+              <ul class="menu">
+                    <li class="menu__list"><a class="active menu__list--link" href="#">Trang chủ</a></li>
+                    <li class="menu__list"><a class="menu__list--link" href="#">Giới thiệu</a></li>
+                    <li class="menu__list"><a class="menu__list--link" href="#">Sản phẩm<i class="fa fa-caret-down"></i></a>
+                      <ul class="menu__sub">
+                        <li class="menu__sub--list"><a class="menu__sub--link" href="#">Sản phẩm 1</a></li>
+                        <li class="menu__sub--list"><a class="menu__sub--link" href="#">Sản phẩm 2</a></li>
+                      </ul>
+                    </li>
+                    <li class="menu__list"><a class="menu__list--link" href="#">Sản phẩm mới<i class="fa fa-caret-down"></i></a>
+                      <ul class="menu__sub">
+                        <li class="menu__sub--list"><a class="menu__sub--link" href="#">Sản phẩm mới 1</a></li>
+                        <li class="menu__sub--list"><a class="menu__sub--link" href="#">Sản phẩm mới 2</a></li>
+                      </ul>
+                    </li>
+                    <li class="menu__list"><a class="menu__list--link" href="#">Tin tức</a></li>
+                    <li class="menu__list"><a class="menu__list--link" href="#">Liên hệ</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="mobile__header">
+            <div class="mobile__search"><a href="#"><i class="fas fa-search"></i></a>
+              <div class="mobile__search__form">
+                <form action="#" method="post">
+                  <input type="text" placeholder="Gõ tìm kiếm...">
+                  <button class="mobile__search__form--btn" type="search"><i class="fas fa-search"></i></button>
+                </form>
+              </div>
+            </div>
+            <div class="mobile__cart"><a href="#"><i class="fas fa-shopping-basket"></i></a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="shop__background">
+          <div class="breadcrumb">
+            <div class="container">
+              <ul class="breadcrumb__inner">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Danh sách sản phẩm</a></li>
+              </ul>
+            </div>
+          </div>
+      <div class="shop-grid">
+        <div class="container">
+          <div class="has-sidebar__flex">
+            <div class="has-sidebar__sidebar">
+              <div class="category__sidebar">
+                <div class="title__section">
+                  <h2 class="title__green">Danh mục sản phẩm</h2>
+                </div>
+                <ul class="category__product">
+                      <li><i class="fas fa-chevron-right"></i><a class="category__product--link" href="#">Cây chậu treo ( 10 )</a></li>
+                      <li><i class="fas fa-chevron-right"></i><a class="category__product--link" href="#">Cây có hoa ( 5 )</a></li>
+                      <li><i class="fas fa-chevron-right"></i><a class="category__product--link" href="#">Cây dây leo</a></li>
+                      <li><i class="fas fa-chevron-right"></i><a class="category__product--link" href="#">Cây để bàn</a></li>
+                      <li><i class="fas fa-chevron-right"></i><a class="category__product--link" href="#">Cây may mắn</a></li>
+                      <li><i class="fas fa-chevron-right"></i><a class="category__product--link" href="#">Cây trang trí</a></li>
+                      <li><i class="fas fa-chevron-right"></i><a class="category__product--link" href="#">Cây nội thất</a></li>
+                </ul>
+              </div>
+              <div class="category__sidebar">
+                <div class="title__section">
+                  <h2 class="title__green">Tìm theo giá</h2>
+                </div>
+                <ul class="category__product">
+                      <li><i class="fas fa-chevron-right"></i><a class="category__product--link" href="#">200.000 Đ - 400.000 Đ</a></li>
+                      <li><i class="fas fa-chevron-right"></i><a class="category__product--link" href="#">400.000 Đ - 600.000 Đ</a></li>
+                      <li><i class="fas fa-chevron-right"></i><a class="category__product--link" href="#">600.000 Đ - 800.000 Đ</a></li>
+                      <li><i class="fas fa-chevron-right"></i><a class="category__product--link" href="#">800.000 Đ - 1.000.000 Đ</a></li>
+                      <li><i class="fas fa-chevron-right"></i><a class="category__product--link" href="#">1.000.000 Đ - 2.000.000 Đ</a></li>
+                </ul>
+              </div>
+              <div class="category__sidebar">
+                <div class="title__section">
+                  <h2 class="title__green">Tìm theo màu</h2>
+                </div>
+                <div class="category__color"></div>
+                    <div class="category__list-color"><span class="category__list-color--bg bg-green"></span><a class="category__list-color--name" href="#">Xanh cây</a></div>
+                    <div class="category__list-color"><span class="category__list-color--bg bg-red"></span><a class="category__list-color--name" href="#">Đỏ cam</a></div>
+                    <div class="category__list-color"><span class="category__list-color--bg bg-purple"></span><a class="category__list-color--name" href="#">Tím</a></div>
+                    <div class="category__list-color"><span class="category__list-color--bg bg-blue"></span><a class="category__list-color--name" href="#">Xanh trời</a></div>
+                    <div class="category__list-color"><span class="category__list-color--bg bg-yellow"></span><a class="category__list-color--name" href="#">Vàng</a></div>
+                    <div class="category__list-color"><span class="category__list-color--bg bg-pink"></span><a class="category__list-color--name" href="#">Hồng</a></div>
+              </div>
+            </div>
+            <div class="has-sidebar__content"> 
+              <div class="shop-grid__banner"><img src="../../../assets/images/page-title/01.jpg" alt="images"></div>
+              <div class="catalog__top">
+                <div class="catalog__view-mode"><a class="catalog__view-mode--grid active" href="#"><i class="fa fa-th"></i></a><a class="catalog__view-mode--list" href="#"><i class="fa fa-th-list"></i></a></div>
+                <div class="catalog__right">
+                  <div class="catalog__filter">
+                    <label>Sắp xếp theo</label>
+                    <div class="catalog__option">
+                      <select class="catalog__option--orderby" name="orderby">
+                            <option value="popularity" selected="selected">Sản phẩm 1</option>
+                            <option value="popularity" selected="selected">Sản phẩm 2</option>
+                            <option value="popularity" selected="selected">Sản phẩm 3</option>
+                            <option value="popularity" selected="selected">Sản phẩm 4</option>
+                            <option value="popularity" selected="selected">Tên sản phẩm</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="catalog__filter">
+                    <label>Show</label>
+                    <div class="catalog__option">
+                      <select class="catalog__option--orderby" name="orderby">
+                            <option value="popularity" selected="selected">2</option>
+                            <option value="popularity" selected="selected">5</option>
+                            <option value="popularity" selected="selected">10</option>
+                            <option value="popularity" selected="selected">12</option>
+                            <option value="popularity" selected="selected">15</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="shop-grid__columns">
+                    <div class="product-grid__box">
+                      <div class="product-grid__img"><a href="#"><img src="../../../assets/images/product/05.png" alt="images"></a><span class="product-grid__label--"></span>
+                        <div class="product-grid__overlay"></div>
+                        <div class="product-grid__link"><a class="product-grid__link--buynow" href="#">mua ngay</a><a class="product-grid__link--preview" href="#"><i class="fa fa-search"></i></a></div>
+                      </div>
+                      <div class="product-grid__content">
+                        <h3 class="product-grid__content--name"><a href="#">Cây Danh Dự</a></h3>
+                      </div>
+                      <div class="product-grid__evaluate"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fas fa-star-half-alt" aria-hidden="true"></i></div>
+                      <div class="product-grid__price"><span class="product-grid__price--sale">250.000 đ</span><span class="product-grid__price--old">250.000 đ</span></div>
+                    </div>
+                    <div class="product-grid__box">
+                      <div class="product-grid__img"><a href="#"><img src="../../../assets/images/product/07.png" alt="images"></a><span class="product-grid__label--"></span>
+                        <div class="product-grid__overlay"></div>
+                        <div class="product-grid__link"><a class="product-grid__link--buynow" href="#">mua ngay</a><a class="product-grid__link--preview" href="#"><i class="fa fa-search"></i></a></div>
+                      </div>
+                      <div class="product-grid__content">
+                        <h3 class="product-grid__content--name"><a href="#">Cây Danh Dự</a></h3>
+                      </div>
+                      <div class="product-grid__evaluate"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fas fa-star-half-alt" aria-hidden="true"></i></div>
+                      <div class="product-grid__price"><span class="product-grid__price--sale">250.000 đ</span><span class="product-grid__price--old">250.000 đ</span></div>
+                    </div>
+                    <div class="product-grid__box">
+                      <div class="product-grid__img"><a href="#"><img src="../../../assets/images/product/02.png" alt="images"></a><span class="product-grid__label--"></span>
+                        <div class="product-grid__overlay"></div>
+                        <div class="product-grid__link"><a class="product-grid__link--buynow" href="#">mua ngay</a><a class="product-grid__link--preview" href="#"><i class="fa fa-search"></i></a></div>
+                      </div>
+                      <div class="product-grid__content">
+                        <h3 class="product-grid__content--name"><a href="#">Cây chân chim</a></h3>
+                      </div>
+                      <div class="product-grid__evaluate"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fas fa-star-half-alt" aria-hidden="true"></i></div>
+                      <div class="product-grid__price"><span class="product-grid__price--sale">250.000 đ</span><span class="product-grid__price--old">250.000 đ</span></div>
+                    </div>
+                    <div class="product-grid__box">
+                      <div class="product-grid__img"><a href="#"><img src="../../../assets/images/product/08.png" alt="images"></a><span class="product-grid__label--"></span>
+                        <div class="product-grid__overlay"></div>
+                        <div class="product-grid__link"><a class="product-grid__link--buynow" href="#">mua ngay</a><a class="product-grid__link--preview" href="#"><i class="fa fa-search"></i></a></div>
+                      </div>
+                      <div class="product-grid__content">
+                        <h3 class="product-grid__content--name"><a href="#">Cây cọ ta</a></h3>
+                      </div>
+                      <div class="product-grid__evaluate"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fas fa-star-half-alt" aria-hidden="true"></i></div>
+                      <div class="product-grid__price"><span class="product-grid__price--sale">250.000 đ</span><span class="product-grid__price--old">250.000 đ</span></div>
+                    </div>
+                    <div class="product-grid__box">
+                      <div class="product-grid__img"><a href="#"><img src="../../../assets/images/product/09.png" alt="images"></a><span class="product-grid__label--"></span>
+                        <div class="product-grid__overlay"></div>
+                        <div class="product-grid__link"><a class="product-grid__link--buynow" href="#">mua ngay</a><a class="product-grid__link--preview" href="#"><i class="fa fa-search"></i></a></div>
+                      </div>
+                      <div class="product-grid__content">
+                        <h3 class="product-grid__content--name"><a href="#">Cây dứa nhỏ</a></h3>
+                      </div>
+                      <div class="product-grid__evaluate"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fas fa-star-half-alt" aria-hidden="true"></i></div>
+                      <div class="product-grid__price"><span class="product-grid__price--sale">250.000 đ</span><span class="product-grid__price--old">250.000 đ</span></div>
+                    </div>
+                    <div class="product-grid__box">
+                      <div class="product-grid__img"><a href="#"><img src="../../../assets/images/product/10.png" alt="images"></a><span class="product-grid__label--"></span>
+                        <div class="product-grid__overlay"></div>
+                        <div class="product-grid__link"><a class="product-grid__link--buynow" href="#">mua ngay</a><a class="product-grid__link--preview" href="#"><i class="fa fa-search"></i></a></div>
+                      </div>
+                      <div class="product-grid__content">
+                        <h3 class="product-grid__content--name"><a href="#">Cây đa búp đỏ</a></h3>
+                      </div>
+                      <div class="product-grid__evaluate"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fas fa-star-half-alt" aria-hidden="true"></i></div>
+                      <div class="product-grid__price"><span class="product-grid__price--sale">250.000 đ</span><span class="product-grid__price--old">250.000 đ</span></div>
+                    </div>
+                    <div class="product-grid__box">
+                      <div class="product-grid__img"><a href="#"><img src="../../../assets/images/product/05.png" alt="images"></a><span class="product-grid__label--"></span>
+                        <div class="product-grid__overlay"></div>
+                        <div class="product-grid__link"><a class="product-grid__link--buynow" href="#">mua ngay</a><a class="product-grid__link--preview" href="#"><i class="fa fa-search"></i></a></div>
+                      </div>
+                      <div class="product-grid__content">
+                        <h3 class="product-grid__content--name"><a href="#">Cây chân chim</a></h3>
+                      </div>
+                      <div class="product-grid__evaluate"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fas fa-star-half-alt" aria-hidden="true"></i></div>
+                      <div class="product-grid__price"><span class="product-grid__price--sale">250.000 đ</span><span class="product-grid__price--old">250.000 đ</span></div>
+                    </div>
+                    <div class="product-grid__box">
+                      <div class="product-grid__img"><a href="#"><img src="../../../assets/images/product/07.png" alt="images"></a><span class="product-grid__label--"></span>
+                        <div class="product-grid__overlay"></div>
+                        <div class="product-grid__link"><a class="product-grid__link--buynow" href="#">mua ngay</a><a class="product-grid__link--preview" href="#"><i class="fa fa-search"></i></a></div>
+                      </div>
+                      <div class="product-grid__content">
+                        <h3 class="product-grid__content--name"><a href="#">Cây dứa nhỏ</a></h3>
+                      </div>
+                      <div class="product-grid__evaluate"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fas fa-star-half-alt" aria-hidden="true"></i></div>
+                      <div class="product-grid__price"><span class="product-grid__price--sale">250.000 đ</span><span class="product-grid__price--old">250.000 đ</span></div>
+                    </div>
+                    <div class="product-grid__box">
+                      <div class="product-grid__img"><a href="#"><img src="../../../assets/images/product/02.png" alt="images"></a><span class="product-grid__label--"></span>
+                        <div class="product-grid__overlay"></div>
+                        <div class="product-grid__link"><a class="product-grid__link--buynow" href="#">mua ngay</a><a class="product-grid__link--preview" href="#"><i class="fa fa-search"></i></a></div>
+                      </div>
+                      <div class="product-grid__content">
+                        <h3 class="product-grid__content--name"><a href="#">Cây cọ ta</a></h3>
+                      </div>
+                      <div class="product-grid__evaluate"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fas fa-star-half-alt" aria-hidden="true"></i></div>
+                      <div class="product-grid__price"><span class="product-grid__price--sale">250.000 đ</span><span class="product-grid__price--old">250.000 đ</span></div>
+                    </div>
+                    <div class="product-grid__box">
+                      <div class="product-grid__img"><a href="#"><img src="../../../assets/images/product/08.png" alt="images"></a><span class="product-grid__label--"></span>
+                        <div class="product-grid__overlay"></div>
+                        <div class="product-grid__link"><a class="product-grid__link--buynow" href="#">mua ngay</a><a class="product-grid__link--preview" href="#"><i class="fa fa-search"></i></a></div>
+                      </div>
+                      <div class="product-grid__content">
+                        <h3 class="product-grid__content--name"><a href="#">Cây Dạ Lam</a></h3>
+                      </div>
+                      <div class="product-grid__evaluate"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fas fa-star-half-alt" aria-hidden="true"></i></div>
+                      <div class="product-grid__price"><span class="product-grid__price--sale">250.000 đ</span><span class="product-grid__price--old">250.000 đ</span></div>
+                    </div>
+                    <div class="product-grid__box">
+                      <div class="product-grid__img"><a href="#"><img src="../../../assets/images/product/09.png" alt="images"></a><span class="product-grid__label--"></span>
+                        <div class="product-grid__overlay"></div>
+                        <div class="product-grid__link"><a class="product-grid__link--buynow" href="#">mua ngay</a><a class="product-grid__link--preview" href="#"><i class="fa fa-search"></i></a></div>
+                      </div>
+                      <div class="product-grid__content">
+                        <h3 class="product-grid__content--name"><a href="#">Cây Danh Dự</a></h3>
+                      </div>
+                      <div class="product-grid__evaluate"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fas fa-star-half-alt" aria-hidden="true"></i></div>
+                      <div class="product-grid__price"><span class="product-grid__price--sale">250.000 đ</span><span class="product-grid__price--old">250.000 đ</span></div>
+                    </div>
+                    <div class="product-grid__box">
+                      <div class="product-grid__img"><a href="#"><img src="../../../assets/images/product/10.png" alt="images"></a><span class="product-grid__label--"></span>
+                        <div class="product-grid__overlay"></div>
+                        <div class="product-grid__link"><a class="product-grid__link--buynow" href="#">mua ngay</a><a class="product-grid__link--preview" href="#"><i class="fa fa-search"></i></a></div>
+                      </div>
+                      <div class="product-grid__content">
+                        <h3 class="product-grid__content--name"><a href="#">Cây dứa nhỏ</a></h3>
+                      </div>
+                      <div class="product-grid__evaluate"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fas fa-star-half-alt" aria-hidden="true"></i></div>
+                      <div class="product-grid__price"><span class="product-grid__price--sale">250.000 đ</span><span class="product-grid__price--old">250.000 đ</span></div>
+                    </div>
+              </div>
+              <div class="pagination">
+                <ul>
+                      <li><a href="#">Trang trước</a></li>
+                      <li><a href="#">1</a></li>
+                      <li><a href="#">2</a></li>
+                      <li><a href="#">3</a></li>
+                      <li><a href="#">4</a></li>
+                      <li><a href="#">Trang sau</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="widget__first">
+        <div class="container">
+          <div class="widget__first--wrap">
+            <div class="widget__intro">
+              <p>Kênh thông tin từ chúng tôi:</p>
+              <div class="widget__intro--social"><a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i class="fab fa-twitter"></i></a><a href="#"><i class="fab fa-instagram"></i></a><a href="#"><i class="fab fa-vimeo"></i></a></div>
+            </div>
+            <div class="widget__intro">
+              <div class="widget__intro--email">đăng ký nhận email từ chúng tôi</div>
+            </div>
+            <div class="widget__search">
+              <form class="widget__search--subcribe" action="#" method="post">
+                <input type="text" name="email">
+                <button class="btn-subcribe" name="subcribe"><i class="fa fa-paper-plane"></i></button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="widget__second">
+        <div class="container">
+          <div class="widget__detail--flex">
+            <div class="widget__detail left">
+              <div class="widget__detail--logo"><a href="index.html" title="Logo"><img src="../../../assets/images/logo/01.png"></a></div>
+              <p class="widget__detail--des">Green shop được thành lập từ 8/2010 được sự tin tưởng của khách hàng trong suốt thời gian hoạt động đến nay cửa hàng ngày một phát triển </p>
+              <ul class="widget__detail--contact">
+                <div class="icon__footer--mobile"><a href="#"><i class="fas fa-mobile"></i></a>
+                  <p>Điện thoại : (84-4) 66.558.868</p>
+                </div>
+                <div class="icon__footer--email"><a href="#"><i class="fas fa-envelope"></i></a>
+                  <p>Email: info@dkt.com.vn</p>
+                </div>
+              </ul>
+            </div>
+            <div class="widget__detail right">
+              <div class="widget__detail--wrap">
+                    <div class="widget__col">
+                      <h3 class="widget__title">Thông tin khách hàng</h3>
+                      <ul class="widget__list">
+                            <li class="widget__list--link"><i class="fas fa-chevron-right"></i><a href="#">Tài khoản của tôi</a></li>
+                            <li class="widget__list--link"><i class="fas fa-chevron-right"></i><a href="#">Sản phẩm yêu thích</a></li>
+                            <li class="widget__list--link"><i class="fas fa-chevron-right"></i><a href="#">Lịch sử mua hàng</a></li>
+                            <li class="widget__list--link"><i class="fas fa-chevron-right"></i><a href="#">Chính sách đổi trả</a></li>
+                            <li class="widget__list--link"><i class="fas fa-chevron-right"></i><a href="#">Góp ý ,khiếu nại</a></li>
+                      </ul>
+                    </div>
+                    <div class="widget__col">
+                      <h3 class="widget__title">Hỗ trợ dịch vụ</h3>
+                      <ul class="widget__list">
+                            <li class="widget__list--link"><i class="fas fa-chevron-right"></i><a href="#">Hệ thống cửa hàng</a></li>
+                            <li class="widget__list--link"><i class="fas fa-chevron-right"></i><a href="#">Hướng dẫn mua hàng</a></li>
+                            <li class="widget__list--link"><i class="fas fa-chevron-right"></i><a href="#">Hướng dẫn thanh toán</a></li>
+                            <li class="widget__list--link"><i class="fas fa-chevron-right"></i><a href="#">Tích điểm đổi quà</a></li>
+                            <li class="widget__list--link"><i class="fas fa-chevron-right"></i><a href="#">Câu hỏi thường gặp</a></li>
+                      </ul>
+                    </div>
+                    <div class="widget__col">
+                      <h3 class="widget__title">Chính sách ưu đãi</h3>
+                      <ul class="widget__list">
+                            <li class="widget__list--link"><i class="fas fa-chevron-right"></i><a href="#">Chính sách giao hàng</a></li>
+                            <li class="widget__list--link"><i class="fas fa-chevron-right"></i><a href="#">Chính sách đổi trả sản phẩm</a></li>
+                            <li class="widget__list--link"><i class="fas fa-chevron-right"></i><a href="#">Chính sách bảo hành </a></li>
+                            <li class="widget__list--link"><i class="fas fa-chevron-right"></i><a href="#">Giới thiệu sản phẩm mới</a></li>
+                            <li class="widget__list--link"><i class="fas fa-chevron-right"></i><a href="#">Chính sách trả góp</a></li>
+                      </ul>
+                    </div>
+                    <div class="widget__col">
+                      <h3 class="widget__title">Tin tức</h3>
+                      <ul class="widget__list">
+                            <li class="widget__list--link"><i class="fas fa-chevron-right"></i><a href="#">Tin mới</a></li>
+                            <li class="widget__list--link"><i class="fas fa-chevron-right"></i><a href="#">Khuyến mại</a></li>
+                            <li class="widget__list--link"><i class="fas fa-chevron-right"></i><a href="#">Tuyển dụng</a></li>
+                            <li class="widget__list--link"><i class="fas fa-chevron-right"></i><a href="#">Download</a></li>
+                            <li class="widget__list--link"><i class="fas fa-chevron-right"></i><a href="#">Tags</a></li>
+                      </ul>
+                    </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="widget__third">
+        <div class="container">
+          <div class="widget__third--flex">
+            <div class="widget__menu"><a class="widget__menu--link" href="#">Sitemap</a><a class="widget__menu--link" href="#">Danh mục sản phẩm </a><a class="widget__menu--link" href="#">Hợp tác</a><a class="widget__menu--link" href="#">Thông tin liên hệ</a><a class="widget__menu--link" href="#">Câu hỏi thường gặp</a>
+            </div>
+            <div class="widget__payment"><img src="../../../assets/images/footer/01.png"></div>
+          </div>
+        </div>
+      </div>
+      <div class="bottom">
+        <div class="container">
+          <p>Thiết kế bởi Bizweb &copy;</p>
+        </div>
+      </div>
+    </footer>
+    <!-- Scripts-->
+  </body>
+</html>

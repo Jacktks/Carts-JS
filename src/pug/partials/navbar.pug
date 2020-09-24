@@ -1,0 +1,25 @@
+//-Nav-bar
+include ../base/mixin.pug
+.menubar
+    .container
+        .menu__flex
+            .menu__inner
+                .menu__mobile
+                    a(href="#")
+                        i.fas.fa-bars
+                nav.menu__nav
+                    ul.menu
+                        each link in ['Trang chủ','Giới thiệu','Sản phẩm','Sản phẩm mới','Tin tức','Liên hệ']
+                            +nav__menu(link)
+            .mobile__header
+                .mobile__search
+                    a(href="#")
+                        i.fas.fa-search
+                    .mobile__search__form
+                        form(action="#" method="post")
+                            input(type="text" placeholder="Gõ tìm kiếm...")
+                            button(type="search" class="mobile__search__form--btn")
+                                i.fas.fa-search
+                .mobile__cart
+                    a(href="#")
+                        i.fas.fa-shopping-basket

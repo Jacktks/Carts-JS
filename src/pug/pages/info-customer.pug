@@ -1,0 +1,36 @@
+extends ../layouts/default-layout.pug
+block title
+    +title('Green Shop | Page Login')
+block content
+    +breadcrumb('Thông tin thanh toán')
+    .info
+        .container
+            .info__progress-bar
+                .wrapper
+                    .info__progress-bar__container
+                        .info__progress-bar__item
+                            p STEP 2: THÔNG TIN THANH TOÁN
+            form.info__form#formCheckout(name="inforForm" action="#")
+                    +form-group('Họ và Tên *', 'text', "infor-receiver", "receiver", "err-receiver")
+                    +form-group('Địa chỉ *', 'text', "infor-address", "address", "err-address")
+                    +form-group('Email *', 'text', "infor-email", "email", "err-email")
+                    +form-group('Số điện thoại *', 'text', "infor-phone", "phone", "err-phone")
+                    //- .info__form--checkbox
+                    //-     .checkbox
+                    //-         input#cbx.checkbox__inp(type="checkbox")
+                    //-         label.checkbox__custom(for="cbx")
+                    //-             span.checkbox__custom--tick
+                    //-             span.checkbox__custom--text Đặt làm địa chỉ email mặc định
+                    .info__form--checkbox
+                        .info__btn
+                            a(href="pagecart.html") 
+                                span.btn__common Quay lại giỏ hàng
+                        .cart__btn
+                            button.btn__common Kiểm tra thông tin
+            .info__form--checkbox
+                .cart__btn
+                    button.btn__common.btn__submitinfo Tiếp tục
+block script
+    script(src="./assets/js/scripts.js")
+    //- script(src="./assets/js/cart.js")
+    script(src="./assets/js/info-customer.js")

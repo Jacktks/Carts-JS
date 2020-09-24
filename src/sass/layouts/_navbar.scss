@@ -1,0 +1,182 @@
+.menubar {
+    background-color: #3fb871;
+    @include res("md") {
+        padding: 11px 0 10px 0;
+        position: relative;
+    }
+}
+.menu {
+    &__flex {
+        @include flex;
+    }
+    &__inner {
+        @include flex($justify: normal);
+
+        &:hover .menu__nav{
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+    &__mobile {
+        @include res("md") {
+            display: block;
+        }
+        a {
+            color: $cl_white;
+
+            font-size: 22px;
+            margin-right: 35px;
+        }
+    }
+    &__list {
+        display: inline-block;
+        position: relative;
+        &:hover .menu__sub {
+            opacity: 1;
+            visibility: visible;
+            z-index: 999;
+
+            top: 100%;
+            @include res("md") {
+                position: relative;
+                padding: 0 19px;
+            }
+        }
+        &:hover i {
+            transform: rotate(180deg);
+        }
+        a {
+            font-size: 14px;
+            text-transform: uppercase;
+        }
+        &--link {
+            color: $cl_white;
+            position: relative;
+            
+            display: inline-block;
+            padding: 15px 20px 16px 19px;
+            &:hover,
+            &.active {
+                color: $cl_white;
+                background-color: #36a66d;
+            }
+            i {
+                @extend.trans;
+                margin-left: 10px;
+            }
+            @include res("md") {
+                width: 100%;
+            }
+        }
+        @include res("md") {
+            display: block;
+        }
+    }
+    &__sub {
+        position: absolute;
+        width: 220px;
+        top: 150%;
+        left: 0;
+
+        opacity: 0;
+        z-index: 999;
+        visibility: hidden;
+
+        background-color: #ffffff;
+        border-radius: 5px;
+        @extend.trans;
+        @include res("md") {
+            width: unset;
+            background-color: unset;
+        }
+        &--list {
+            border-bottom: 1px solid rgba(16, 32, 57, 0.1);
+        }
+        &--link {
+            width: 100%;
+            padding: 15px 15px 15px 20px; 
+            display: inline-block;
+            @include res("md") {
+                color: $cl_white;
+            }
+            &.active,
+            &:hover {
+                color: $cl_green;
+            }
+            &:hover {
+                @include res("md") {
+                    color: $cl_white;
+                    background-color: #36a66d;
+                }
+            }
+        }
+    }
+    &__nav {
+        @include res("md") {
+            position: absolute;
+            width: 100%;
+            top: 100%;
+            left: 0;
+
+            z-index: 99;
+            opacity: 0;
+            visibility: hidden;
+
+            background-color: $cl_m;
+            transition: all 0.3s ease-in-out;
+        }
+    }
+}
+.mobile {
+    &__header {
+        display: flex;
+        opacity: 0;
+        @include res("md") {
+            opacity: 1;
+        }
+    }
+    &__search {
+        position: relative;
+        a {
+            color: $cl_white;
+        }
+        &:hover .mobile__search__form {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        &__form {
+            position: absolute;
+            width: 220px;
+            right: 0;
+            bottom: -54px;
+            
+            z-index: 9;
+            opacity: 0;
+            visibility: hidden;
+
+            @extend.trans;
+            input {
+                padding: 0 35px 0 15px;
+            }
+
+            &--btn {
+                position: absolute;
+                padding: 0;
+                top: 50%;
+                right: 15px;
+
+                color: #000;
+                background: unset;
+               
+                transform: translateY(-50%);
+            }
+        }
+    }
+    &__cart {
+        margin-left: 20px;
+        a {
+            color: $cl_white;
+        }
+    }
+}

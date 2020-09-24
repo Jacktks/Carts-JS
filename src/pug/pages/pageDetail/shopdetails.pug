@@ -1,0 +1,80 @@
+.shop-detail
+    .container
+        .shop-detail__columns
+            .product-detail
+                .product-detail__img
+                    .product-detail__img--main
+                        img(src="../../../../assets/images/product/05.png")
+                    .product-detail__img--grid
+                        each option_img in ['10', '04', '13', '07', '14']
+                            +img-detail(option_img)
+                .product-detail__desc
+                    h3.product-detail__title Cây dạ lam
+                    .product-detail__evaluate
+                        i.fa.fa-star(aria-hidden='true')
+                        i.fa.fa-star(aria-hidden='true')
+                        i.fa.fa-star(aria-hidden='true')
+                        i.fa.fa-star(aria-hidden='true')
+                        i.fa.fa-star(aria-hidden='true')
+                    .product-detail__price
+                        span.old-price 4.099.000 đ
+                        span.new-price 4.099.000 đ
+                    p Cây mọc thành bụi thưa, thân vươn thẳng với chiều cao cây trung bình từ 0,8-1,2m. Lá hình trứng, mép lá nguyên, gân lá nổi rõ, phiến rộng khoảng từ 15-20cm. Lá có màu xanh đậm ở mặt trên, quanh gân lá có màu trắng sữa; mặt dưới lá nhạt màu hơn. Lá cây dạ lam mọc cách, cuống lá dài khi rụng để lại các khía màu nâu nhạt.
+                    form.quantity__form
+                        .quantity__inner
+                            label Số lượng
+                            .quantity__number-product
+                                button.btn-num(type='button') -
+                                input#qtym(type='text' maxlength='3' name='quantity' value='1')
+                                button.btn-num(type='button') +
+                    .product-detail__btn
+                        button.btn__common mua ngay
+                        a(href="#" class="btn__search")
+                            i.fa.fa-search
+                        a(href="#" class="btn__favourite")
+                            i.fa.fa-heart
+                    ul.list__common
+                        +list-icon('1','1a','b','facebook','Like','tag','0')
+                        +list-icon('2','1b','b','twitter','Tweet')
+                        +list-icon('3','1c','b','google-plus-g','1','tag','0')
+                        +list-icon('4','1d','s','plus-square','Share')
+section.tab
+    .container
+        input#tab-1.tab__selector-1(type='radio' name='radio-set' checked='checked')
+        label.tab__label-1(for='tab-1') Thông tin sản phẩm
+        input#tab-2.tab__selector-2(type='radio' name='radio-set')
+        label.tab__label-2(for='tab-2') Khách hàng đánh giá
+        input#tab-3.tab__selector-3(type='radio' name='radio-set')
+        label.tab__label-3(for='tab-3') Thẻ tag
+        .tab__clear-shadow
+        .tab__content
+            .tab__content-1
+                p Tên phổ thông: Dạ lam, Huỳnh tinh cảnh, Dong vằn.
+                p Tên khoa học: Calathea zebrina
+                p Họ thực vật: Marantaceae (Củ dong).
+                p Chiều cao: 0,8-1,2m
+                p Cây dạ lammmmm có nguồn gốc từ Brazil, được du nhập và phân bố rộng khắp ở Việt Nam.
+                p Cây mọc thành bụi thưa, thân vươn thẳng với chiều cao cây trung bình từ 0,8-1,2m. Lá hình trứng, mép lá nguyên, gân lá nổi rõ, phiến rộng khoảng từ 15-20cm. Lá có màu xanh đậm ở mặt trên, quanh gân lá có màu trắng sữa; mặt dưới lá nhạt màu hơn. Lá cây dạ lam mọc cách, cuống lá dài khi rụng để lại các khía màu nâu nhạt.Cây dạ lam thuộc loại cây chịu bóng bán phần hoặc hoàn toàn, nhu cầu nước tương đối cao. Cây được nhân giống từ tách bụi, cây mọc khỏe, tốc độ sinh trưởng nhanh với sức sống mạnh.Đây là loại cây có dáng đẹp, màu lá mướt mát, tươi khỏe, cây rất phù hợp trồng chậu trang trí nội thất-văn phòng.Ngoài ra, cây còn có đặc điểm lọc khí, làm xanh mát môi trường, giúp điều hòa không khí, đặc biệt tốt cho những môi trường thường xuyên sử dụng các loại máy móc tảng nhiệt. Có thể bày cây ở hành lang hay ở giữa sảnh, đặt ở cạnh bàn làm việc hoặc trang trí các góc phòng có diện tích trung bình.
+            .tab__content-2
+                p Tên phổ thông: Dạ lam, Huỳnh tinh cảnh, Dong vằn.
+                p Tên khoa học: Calathea zebrina
+                p Họ thực vật: Marantaceae (Củ dong).
+                p Chiều cao: 0,2-1,5m
+                p Cây dạ lam có nguồnnnnn gốc từ Brazil, được du nhập và phân bố rộng khắp ở Việt Nam.
+                p Cây mọc thành bụi thưa, thân vươn thẳng với chiều cao cây trung bình từ 0,8-1,2m. Lá hình trứng, mép lá nguyên, gân lá nổi rõ, phiến rộng khoảng từ 15-20cm. Lá có màu xanh đậm ở mặt trên, quanh gân lá có màu trắng sữa; mặt dưới lá nhạt màu hơn. Lá cây dạ lam mọc cách, cuống lá dài khi rụng để lại các khía màu nâu nhạt.Cây dạ lam thuộc loại cây chịu bóng bán phần hoặc hoàn toàn, nhu cầu nước tương đối cao. Cây được nhân giống từ tách bụi, cây mọc khỏe, tốc độ sinh trưởng nhanh với sức sống mạnh.Đây là loại cây có dáng đẹp, màu lá mướt mát, tươi khỏe, cây rất phù hợp trồng chậu trang trí nội thất-văn phòng.Ngoài ra, cây còn có đặc điểm lọc khí, làm xanh mát môi trường, giúp điều hòa không khí, đặc biệt tốt cho những môi trường thường xuyên sử dụng các loại máy móc tảng nhiệt. Có thể bày cây ở hành lang hay ở giữa sảnh, đặt ở cạnh bàn làm việc hoặc trang trí các góc phòng có diện tích trung bình.
+            .tab__content-3
+                p Tên phổ thông: Dạ lam, Huỳnh tinh cảnh, Dong vằn.
+                p Tên khoa học: Calathea zebrina
+                p Họ thực vật: Marantaceae (Củ dong).
+                p Chiều cao: 2,8-3,6m
+                p Cây dạ lam có nguồn gốc từ Brazil, được du nhập và phân bố rộng khắp ở Việt Nam.
+                p Cây mọc thành bụi thưaaaaa, thân vươn thẳng với chiều cao cây trung bình từ 0,8-1,2m. Lá hình trứng, mép lá nguyên, gân lá nổi rõ, phiến rộng khoảng từ 15-20cm. Lá có màu xanh đậm ở mặt trên, quanh gân lá có màu trắng sữa; mặt dưới lá nhạt màu hơn. Lá cây dạ lam mọc cách, cuống lá dài khi rụng để lại các khía màu nâu nhạt.Cây dạ lam thuộc loại cây chịu bóng bán phần hoặc hoàn toàn, nhu cầu nước tương đối cao. Cây được nhân giống từ tách bụi, cây mọc khỏe, tốc độ sinh trưởng nhanh với sức sống mạnh.Đây là loại cây có dáng đẹp, màu lá mướt mát, tươi khỏe, cây rất phù hợp trồng chậu trang trí nội thất-văn phòng.Ngoài ra, cây còn có đặc điểm lọc khí, làm xanh mát môi trường, giúp điều hòa không khí, đặc biệt tốt cho những môi trường thường xuyên sử dụng các loại máy móc tảng nhiệt. Có thể bày cây ở hành lang hay ở giữa sảnh, đặt ở cạnh bàn làm việc hoặc trang trí các góc phòng có diện tích trung bình.
+section.related
+    .container
+        .title__section
+            h2.title__green Sản phẩm cùng loại
+        .related__columns
+            +product-grid('05','','','Cây Danh Dự','250.000 đ','250.000 đ')
+            +product-grid('07','','','Cây Danh Dự','250.000 đ','250.000 đ')
+            +product-grid('02','','','Cây chân chim','250.000 đ','250.000 đ')
+            +product-grid('08','','','Cây cọ ta','250.000 đ','250.000 đ')

@@ -1,0 +1,9 @@
+extends ../layouts/default-layout.pug
+block title
+    +title('Green Shop | Page Cart')
+block content
+    +breadcrumb('Giỏ hàng')
+    include ./pageCart/shop-cart.pug
+block script
+    script(src="./assets/js/scripts.js")
+    script(src="./assets/js/cart.js")

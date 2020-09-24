@@ -1,0 +1,23 @@
+//-Header
+header.header
+    .container
+        .header__grid
+            .header__logo
+                a(href="../../../index.html" title="Logo")
+                    img(src="../../../assets/images/logo/01.png", alt="Logo")
+            .header__content
+                .header__search
+                    form(action="#" method="post")
+                        i.fas.fa-phone-square
+                        span.header__search--hotline Hỗ trợ: (04) 6674 2332 - (04) 3786 8904
+                        .header__search--input
+                            input(placeholder="Tìm kiếm..." type="search")
+                            button(type="submit" class='btn-search')
+                                i.fa.fa-search
+                .header__cart
+                    a(href="pagecart.html")
+                        i.fa.fa-shopping-basket
+                    span.header__cart--amount 0
+    .header__img
+        img(src="../../../assets/images/header/02.png")
+    

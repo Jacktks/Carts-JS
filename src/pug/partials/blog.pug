@@ -1,0 +1,29 @@
+.blog
+    .container
+        .has-sidebar__flex
+            .has-sidebar__sidebar
+                .category__sidebar
+                    .title__section
+                        h2.title__green Danh mục sản phẩm
+                    ul.category__product
+                        each link in ['Cây chậu treo ( 10 )','Cây có hoa ( 5 )','Cây dây leo','Cây để bàn','Cây may mắn','Cây trang trí','Cây nội thất']
+                            +category-product(link)
+                .category__sidebar
+                    .title__section
+                        h2.title__green Tin tức nổi bật
+                    ul.category__article
+                        +blog-new('16','Hướng dẫn lựa chọn và bố trí cây xanh trong phòng khách')
+                        +blog-new('17','Những sai lầm nên tránh khi bố trí cây xanh trong nhà')
+                        +blog-new('18','7 loại cây xanh để bàn đang được giới văn phòng ưa chuộng')
+                        +blog-new('19','Hướng dẫn lựa chọn cây cảnh trang trí trong văn phòng')
+                        +blog-new('20','4 loại cây cảnh thích hợp bày trí ở khu vực đại sảnh')
+                .category__sidebar
+                    .title__section
+                        h2.title__green Blog tag
+                    .category__tag
+                        each tag in ['Cây văn phòng','Cây phát lộc','Cây xanh','Cây trang trí','Cây','Plants','Sức khỏe','Qùa tặng','Lưu niệm']
+                            +blog-tag(tag)
+            .has-sidebar__content
+                block blog
+                    include ../pages/pageBlog/blog-content.pug
+                    include ./pagination.pug

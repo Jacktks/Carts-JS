@@ -1,0 +1,12 @@
+.product-new {
+    padding: 50px 0;
+    &__columns {
+        @include d-grid(1fr 1fr 1fr 1fr);
+        @include res ("md") {
+            @include d-grid(1fr 1fr);
+        }
+        @include res("xs") {
+            @include d-grid(1fr);
+        }
+    }
+}

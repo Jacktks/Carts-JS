@@ -1,0 +1,250 @@
+//- title
+mixin title(h1)
+    title= h1
+//- Nav-menu
+mixin nav__menu(link)
+    case link
+        when 'Trang chủ'
+            li.menu__list
+                a(class="active menu__list--link" href='#')= link
+        when 'Sản phẩm'
+            li.menu__list
+                a(class="menu__list--link" href='#') Sản phẩm
+                    i.fa.fa-caret-down
+                ul.menu__sub
+                    li.menu__sub--list
+                        a(class="menu__sub--link" href='#') Sản phẩm 1
+                    li.menu__sub--list
+                        a(class="menu__sub--link" href='#') Sản phẩm 2
+        when 'Sản phẩm mới'
+            li.menu__list
+                a(class="menu__list--link" href='#') Sản phẩm mới
+                    i.fa.fa-caret-down
+                ul.menu__sub
+                    li.menu__sub--list
+                        a(class="menu__sub--link" href='#') Sản phẩm mới 1
+                    li.menu__sub--list
+                        a(class="menu__sub--link" href='#') Sản phẩm mới 2
+        default
+            li.menu__list
+                a(class="menu__list--link" href='#')= link
+
+//-Footer-widget
+mixin widget__list(h3,links)
+    .widget__col
+        h3.widget__title= h3
+        ul.widget__list
+            each link in links 
+                +widget__link(link)
+//- widget__link
+mixin widget__link(link)
+    li.widget__list--link
+        i.fas.fa-chevron-right
+        a(href='#')= link
+//-widget-menu
+mixin widget__menu(link)
+    a(href='#' class="widget__menu--link")= link
+//-Product-grid
+mixin product-grid(img,sale,sl,h3,p_old,p_current)
+    .product-grid__box
+        .product-grid__img
+            a(href="#")
+                img(src=`../../../assets/images/product/${img}.png` alt='images')
+            span(class=`product-grid__label--${sale}`)= sl
+            .product-grid__overlay
+            .product-grid__link
+                a(href="#" class="product-grid__link--buynow") mua ngay
+                a(href="#" class="product-grid__link--preview")
+                        i.fa.fa-search
+        .product-grid__content
+            h3.product-grid__content--name
+                a(href="#")= h3
+        .product-grid__evaluate
+            i.fa.fa-star(aria-hidden='true')
+            i.fa.fa-star(aria-hidden='true')
+            i.fa.fa-star(aria-hidden='true')
+            i.fa.fa-star(aria-hidden='true')
+            i.fas.fa-star-half-alt(aria-hidden='true')
+        .product-grid__price
+            span.product-grid__price--sale= p_old
+            span.product-grid__price--old= p_current
+//-ProductSale
+mixin product-sale(img,h3,p_current)
+    .product-sale__box
+        .product-sale__img
+            a(href="#")
+                img(src=`../../../assets/images/product/${img}.png` alt='images')
+        .product-sale__content
+            h3.product-sale__name
+                a(href="#")= h3
+            .product-sale__evaluate
+                i.fa.fa-star(aria-hidden='true')
+                i.fa.fa-star(aria-hidden='true')
+                i.fa.fa-star(aria-hidden='true')
+                i.fa.fa-star(aria-hidden='true')
+                i.fas.fa-star-half-alt(aria-hidden='true')
+            .product-sale__price
+                span.current-price= p_current
+//-Blog
+mixin blog-grid(img,time,h3,des)
+    article.blog-grid__box 
+        .blog-grid__img
+            a(href="#")
+                img(src=`../../../assets/images/blog/${img}.jpg` alt='images')
+        .blog-grid__content
+            span.blog-grid__time=time
+            h3.blog-grid__title
+                a(href="#")=h3
+            p= des
+            .blog-grid__read-more
+                a(href="#") Đọc tiếp
+//- catalog-orderby
+mixin catalog-orderby(option)
+    option(value='popularity' selected='selected')= option
+//- pagination
+mixin pagination(link)
+    li
+        a(href="#")= link
+//- category-product
+mixin category-product(link)
+    li
+        i.fas.fa-chevron-right
+        a(href="#" class="category__product--link")= link
+//- category-color
+mixin category-color(color,name)
+    .category__list-color
+        span(class=`category__list-color--bg bg-${color}`)
+        a(href="#" class="category__list-color--name")= name
+//-Breadcrumb
+mixin breadcrumb(link)
+    .breadcrumb
+        .container
+            ul.breadcrumb__inner
+                li
+                    a(href="index.html") Home
+                li
+                    a(href="#")= link
+//-Product-list
+mixin product-list(img,h3,des,p_current)
+    .product-list__box
+        .product-list__img
+            a(href="#")
+                img(src=`../../../assets/images/product/${img}.png` alt='images')
+        .product-list__content
+            h3.product-list__name
+                a(href="#")= h3
+            .product-list__evaluate
+                i.fa.fa-star(aria-hidden='true')
+                i.fa.fa-star(aria-hidden='true')
+                i.fa.fa-star(aria-hidden='true')
+                i.fa.fa-star(aria-hidden='true')
+                i.fa.fa-star(aria-hidden='true')
+            p= des
+            .product-list__price
+                span.current-price= p_current
+            .product-list__btn
+                a(href="#" class="btn__common") mua ngay
+                a(href="#" class="btn__search") 
+                    i.fa.fa-search
+                a(href="#" class="btn__favourite")
+                    i.fa.fa-heart
+//-Grid-details
+mixin img-detail(img)
+    a(href="#")
+        img(src=`../../../assets/images/product/${img}.png` alt='images')
+//-List-icon
+mixin list-icon(stt,index,icon1,icon2,content,tag,number)
+    li(class = `list__common--${stt}`)
+        .list
+            div(class =`list-1 list-${index}`)
+                i(class = `fa${icon1} fa-${icon2}`)
+                a(href="#")= content
+            div(class = `${tag}`)= number
+//-Cart
+mixin cart__body(img,name,initial,qty)
+    tr
+        td.cart__product--img
+            a(href='#')
+                img(src=`../../../assets/images/product/${img}.png` alt='images')
+        td.cart__product--name(data-title='tên sản phẩm')
+            a(href='#')= name
+        td.cart__product--price(data-title='đơn giá')
+            span.unit-amount= `${initial}.000 đ`
+        td.cart__product--quantity(data-title='số lượng')
+            span.input-counter= qty
+        td.cart__product--total(data-title='thành tiền')
+            span.subtotal-amount= `${initial*qty}.000 đ`
+        td.cart__product--remove(data-title='xóa')
+            a(href='#')
+                i.fa.fa.fa-trash
+//- Columns-Cart
+mixin cart-columns(id,content)
+    th(class= `cart__columns--${id}`)= content
+//- Table-Pay
+mixin table-pay(name, content1,content2)
+    tr(class = `${name}`)
+        td= content1
+        td= content2
+//-blog-new
+mixin blog-new(img,content)
+    li
+        .category__article--img
+            img(src=`../../../assets/images/product/${img}.png` alt="images")
+        h4.category__article--title
+            a(href="#")= content
+//-Blog-tag
+mixin blog-tag(content)
+    a(href="#")= content
+mixin blog-content(title,img,content)
+    article
+        .blog__title
+            a(href='#')= title
+        ul.blog__post
+            li.blog__post--date
+                span
+                    i.fas.fa-calendar-week
+                a(href='#') 20/12/2015
+            li.blog__post--time
+                span
+                    i.far.fa-clock
+                a(href='#') 11:20:00 AM
+            li.blog__post--comment
+                span
+                    i.far.fa-comment-dots
+                a(href='#') 0 Bình luận
+        .blog__img
+            a(href='#')
+                img(src=`../../../assets/images/blog/${img}.jpg` alt='images')
+        p= content
+//-Comment
+mixin comment(img,name,des,time)
+    .comment-box
+        .comment-box__avatar
+            img(src=`../../../assets/images/blog/${img}.jpg` alt='images')
+        .comment-box__content
+            h3.comment-box__content--name= name
+            p.description= des
+            .comment-box__content--time
+                span.time= time
+        .comment-box__reply
+            a(href='#') Trả lời
+//-form
+mixin form(placeholder)
+    .w-comment__top--input
+        input(placeholder=`${placeholder}` type='text')
+mixin register(label)
+    fieldset.form__group
+        label= label
+            span.required *
+        input(type='text')
+mixin form-customer(query, content,id)
+    fieldset.info__form__group
+        label(for="query")= content
+        input(type="text" value)#id
+mixin form-group(label, type,idInput, name,idError)
+    .info__form__group.form-group
+        label= label
+        input(id=idInput name=name, type=type, required)
+        i.fas.fa-check-circle
+        i.fas.fa-exclamation-circle
+        .error-message(id=idError)

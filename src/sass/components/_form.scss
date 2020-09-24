@@ -1,0 +1,72 @@
+.form {
+    &__group {
+        margin: 0 20px 20px 0;
+        label {
+            font-size: 12px;
+            display: block;
+            margin-bottom: 10px;
+            .required {
+                color: #ed1c24;
+                font-size: 14px;
+                padding-left: 2px;
+            }
+        }
+
+    }   
+}
+.form-group {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-left: 300px;
+    @include res("md") {
+        margin-left: unset;
+    }
+  
+    label {
+      @include font-a(#000, 12px, 600);
+      margin-bottom: 5px;
+    }
+  
+    input {
+      padding: 10px 15px;
+      margin-bottom: 5px;  
+      width: 80%;
+      @include res("md") {
+          width: 100%;
+      } 
+    }
+  
+    .error-message {
+      margin-top: 2px;
+      font-style: italic;
+      color: #e74c3c;
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+  
+    i {
+      position: absolute;
+      top: 32px;
+      right: 150px;
+      visibility: hidden;
+    }
+  
+    &.success input {
+      border: 2px solid #2ecc71 !important;
+    }
+  
+    &.error input {
+      border: 2px solid #e74c3c !important;
+    }
+  
+    &.success i.fa-check-circle {
+      color: #2ecc71;
+      visibility: visible;
+    }
+  
+    &.error i.fa-exclamation-circle {
+      color: #e74c3c;
+      visibility: visible;
+    }
+  }

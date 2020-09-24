@@ -1,0 +1,48 @@
+.blog {
+    margin-bottom: 70px;
+}
+.blog-grid {
+    &__columns {
+        @include d-grid(1fr 1fr 1fr);
+        @include res("sm") {
+            @include d-grid(1fr);
+        }
+    }
+    &__box {
+        font-family: $font_s;
+        p {
+            margin-bottom: 10px;
+        }
+        &:hover .blog-grid__img img {
+            transform: scale(1.2)
+        }
+    }
+    &__img {
+        position: relative;
+        overflow: hidden;
+        img {
+            @extend.trans;
+        }
+    }
+    &__time {
+        font-size: 12px;
+        font-style: italic;
+        margin: 15px 0;
+        display: block;
+    }
+    &__title {
+        margin-bottom: 10px;
+        a {
+            font-size: 14px;
+            font-weight: 700;
+            color: $cl_m;
+        }
+    }
+    &__read-more {
+        a {
+            font-size: 12px;
+            font-style: italic;
+            color: $cl_m;
+        }
+    }
+}

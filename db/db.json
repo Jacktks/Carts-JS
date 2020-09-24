@@ -1,0 +1,116 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "name": "Crow's Feet",
+            "nprice": 250000,
+            "oprice": 270000,
+            "image": "01.png",
+            "inCart": 1
+        },
+        {
+            "id": 2,
+            "name": "Fortune Tree",
+            "nprice": 250000,
+            "oprice": 270000,
+            "image": "02.png",
+            "inCart": 1
+        },  
+        {
+            "id": 3,
+            "name": "Needle Fortune",
+            "nprice": 250000,
+            "oprice": 270000,
+            "image": "03.png",
+            "inCart": 1
+        },
+        {
+            "id": 4,
+            "name": "Cactus",
+            "nprice": 250000,
+            "oprice": 270000,
+            "image": "04.png",
+            "inCart": 1
+        },
+        {
+            "id": 5,
+            "name": "Zucchini",
+            "nprice": 250000,
+            "oprice": 270000,
+            "image": "05.png",
+            "inCart": 1
+        },
+        {
+            "id": 6,
+            "name": "Kaleidoscope",
+            "nprice": 250000,
+            "oprice": 270000,
+            "image": "06.png",
+            "inCart": 1
+        },
+        {
+            "id": 7,
+            "name": "Red Banyan",
+            "nprice": 250000,
+            "oprice": 270000,
+            "image": "07.png",
+            "inCart": 1
+        },
+        {
+            "id": 8,
+            "name": "Honor",
+            "nprice": 250000,
+            "oprice": 270000,
+            "image": "08.png",
+            "inCart": 1
+        },
+        {
+            "id": 9,
+            "name": "Palm",
+            "nprice": 250000,
+            "oprice": 270000,
+            "image": "09.png",
+            "inCart": 1
+        },
+        {
+            "id": 10,
+            "name": "Small Pneapple",
+            "nprice": 250000,
+            "oprice": 270000,
+            "image": "10.png",
+            "inCart": 1
+        },
+        {
+            "id": 11,
+            "name": "Queen",
+            "nprice": 250000,
+            "oprice": 270000,
+            "image": "11.png",
+            "inCart": 1
+        },
+        {
+            "id": 12,
+            "name": "Hawai",
+            "nprice": 250000,
+            "oprice": 270000,
+            "image": "12.png",
+            "inCart": 1
+        },
+        {
+            "id": 13,
+            "name": "King",
+            "nprice": 250000,
+            "oprice": 270000,
+            "image": "13.png",
+            "inCart": 1
+        },
+        {
+            "id": 14,
+            "name": "Price",
+            "nprice": 250000,
+            "oprice": 270000,
+            "image": "14.png",
+            "inCart": 1
+        }
+    ]
+}

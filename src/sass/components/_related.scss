@@ -1,0 +1,12 @@
+.related {
+    margin-bottom: 70px;
+    &__columns {
+        @include d-grid(1fr 1fr 1fr 1fr);
+        @include res("md"){
+            @include d-grid(1fr 1fr);
+        }
+        @include res("xs") {
+            @include d-grid(1fr);
+        }
+    }
+}
